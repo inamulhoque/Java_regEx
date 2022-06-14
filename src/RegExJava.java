@@ -3,8 +3,8 @@ import java.util.regex.Pattern;
 
 public class RegExJava {
     public static void main(String[] args) {
-        String name = "Hoque";
-        String regex = "^[A-Z][a-z]{2,}$";
+        String name = "inam.hoq@hotmail.co.in";
+        String regex = "[a-z]\\.?+[a-z]\\.?+@[a-z]+\\.co?+\\.in?";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(name);
         if (matcher.find()){
